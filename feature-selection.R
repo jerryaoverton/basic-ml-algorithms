@@ -8,6 +8,6 @@ library(FSelector)
 att.scores <- information.gain(Survived~ ., df)
 features <- cutoff.k(att.scores, n)
 
-#filter down the original plus the top n features
+#filter the data set down to only the top n features
 cols <- c(features, "Survived")
 df.sub <- df[,cols]
