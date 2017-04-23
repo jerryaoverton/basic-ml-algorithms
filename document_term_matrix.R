@@ -1,7 +1,7 @@
 #create a document term matrix data frame from csv file containing unstructured text
 
 #read in the customer complaints
-data <- read.csv("consumer_complaints.csv") 
+data <- read.csv("consumer_complaints_population.csv") 
 
 #filter the data down to the necessary columns
 cols <- c("Complaint.ID", "Product", "Consumer.complaint.narrative")
